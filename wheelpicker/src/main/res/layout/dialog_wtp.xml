@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="36dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
+
+    <com.sonhvp.wheelpicker.WheelTimePicker
+            android:id="@+id/dialog_wheelPicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            app:wtp_textSize="24sp"
+            app:wtp_textColor="#212121"
+            app:wtp_dividerColor="#727272"
+            app:wtp_dividerHeight="2dp"/>
+
+</LinearLayout>

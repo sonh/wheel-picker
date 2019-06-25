@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WheelTimePicker">
+        <attr name="wtp_textSize" format="dimension"/>
+        <attr name="wtp_textColor" format="color"/>
+        <attr name="wtp_dividerColor" format="color"/>
+        <attr name="wtp_dividerHeight" format="dimension"/>
+    </declare-styleable>
+</resources>
