@@ -14,8 +14,21 @@ dependencies {
     implementation 'com.sonhvp:wheel-picker:0.0.1'
 }
 ```
+### Overview
+WheelPicker is extend from the base `View` class to minimize performance impact by using native draw operations. We currently only support timepicker.
 ### Use wheel picker as a view
-Initialize in your Application.onCreate() method
+Define the `WheelTimePicker` in XML:
+```xml
+<com.sonhvp.wheelpicker.WheelTimePicker
+            android:id="@+id/wheelTimePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:wtp_textColor="#212121"
+            app:wtp_textSize="36sp"
+            app:wtp_dividerColor="#727272"
+            app:wtp_dividerHeight="1dp"/>
+```
 ```kotlin
 class MainActivity : AppCompatActivity() {
 
@@ -23,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        wheelPicker.onTimeSelected = { hour, minute ->
+        wheelTimePicker.onTimeSelected = { hour, minute ->
             //Update hour and minute
             
         }
@@ -50,6 +63,14 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+```
+### Customization
+You can customize the `WheelTimePicker` via XML:
+```
+    app:wtp_textColor="#212121"
+    app:wtp_textSize="36sp"
+    app:wtp_dividerColor="#727272"
+    app:wtp_dividerHeight="1dp"
 ```
 ### License
 Copyright 2019 Son Huynh.
